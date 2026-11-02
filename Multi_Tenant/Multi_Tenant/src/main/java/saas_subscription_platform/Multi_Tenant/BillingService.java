@@ -11,8 +11,10 @@ public class BillingService {
     public BillingService(Config config) {
         this.config = config;
     }
+    
+    
 
     public void displayCurrency() {
-        System.out.println("Default Billing Currency: " + config.getDefaultCurrency());
+        System.out.println("Default Billing Currency Loaded from properties: " + config.getDefaultCurrency());
     }
 }
