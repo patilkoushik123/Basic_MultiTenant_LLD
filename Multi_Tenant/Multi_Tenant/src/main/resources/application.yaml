@@ -1,6 +1,16 @@
 spring:
   application:
     name: Multi_Tenant
+  datasource:
+    url: jdbc:postgresql://localhost:5432/multi_tenant_db
+    username: postgres
+    password: PSQL@#778 # Replace with your actual password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # Hibernate will auto-create or update your tables
+    show-sql: true
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 billing:
   default-currency: INR
